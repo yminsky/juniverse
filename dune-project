@@ -1,0 +1,16 @@
+(lang dune 2.9)
+
+(name juniverse)
+(generate_opam_files true)
+(source (github avsm/juniverse))
+(authors "Anil Madhavapeddy")
+(maintainers "Anil Madhavapeddy")
+(license LICENSE)
+(documentation https://url/to/documentation)
+(package
+ (name juniverse)
+ (synopsis "The Juniverse is the spice of life")
+ (description "All the Jane Street packages")
+ (depends ocaml dune patdiff)
+)
+
