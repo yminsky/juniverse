@@ -2,16 +2,18 @@
 opam-version: "2.0"
 synopsis: "The Juniverse is the spice of life"
 description: "All the Jane Street packages"
-maintainer: ["Anil Madhavapeddy"]
-authors: ["Anil Madhavapeddy"]
+maintainer: ["Yaron Minsky"]
+authors: ["Yaron Minsky"]
 license: "LICENSE"
-homepage: "https://github.com/avsm/juniverse"
+homepage: "https://github.com/yminsky/juniverse"
 doc: "https://url/to/documentation"
-bug-reports: "https://github.com/avsm/juniverse/issues"
+bug-reports: "https://github.com/yminsky/juniverse/issues"
 depends: [
   "ocaml"
   "dune" {>= "2.9"}
   "patdiff"
+  "async"
+  "incremental"
   "odoc" {with-doc}
 ]
 build: [
@@ -30,4 +32,4 @@ build: [
   ]
   ["dune" "install" "-p" name "--create-install-files" name]
 ]
-dev-repo: "git+https://github.com/avsm/juniverse.git"
+dev-repo: "git+https://github.com/yminsky/juniverse.git"
