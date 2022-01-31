@@ -1,0 +1,6 @@
+(library
+ (name simple_test)
+ (libraries async core incremental)
+ (inline_tests)
+ (preprocess
+  (pps ppx_jane)))
